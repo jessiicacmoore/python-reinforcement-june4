@@ -28,13 +28,15 @@ events = [
     },
 ]
 
+
 def display_events():
     for city in events:
-        print(city['city'])
-        print('----------')
-        for date in city['events']:
-            print('Date: {}, {} people'.format(date['date'], date['attendees']))
+        print(city["city"])
+        print("----------")
+        for date in city["events"]:
+            print("Date: {}, {} people".format(date["date"], date["attendees"]))
         print()
+
 
 display_events()
 # Hamilton
